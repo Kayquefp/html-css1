@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body{
+    background-color: #ebe9c59a;
+    font-family: var(--font-padrao);
+}
+
+:root {
+    --cor0: #050b61;
+    --cor1: #0914AD;
+    --cor2: #18267B;
+    --cor3: #0C2CFA;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif; 
+    --font-destaque: 'Bebas Neue', sans-serif;
+    --font-titulo: 'Noto Sans', Arial, Verdana, Sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+ }
+
+ header {
+    background-image: linear-gradient(to bottom, #0C2CFA,  #050b61);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    height: 205px;
+    color: white;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3.5em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.39);
+}
+
+header > p {
+    font-family: var(--font-padrao);
+    font-size: 1.5em;
+    color: white;
+    max-width: 525px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.37);
+}
+
+nav {
+    background-color: transparent;
+    padding-top: 40px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+    font-family: var(--font-padrao);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: rgb(97, 140, 235);
+}
+
+main {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color:  #0C2CFA;
+    background-color: #0c2cfa67;
+    padding: 2px 6px;
+}
+
+main h1 {
+font-family: var(--font-titulo);
+font-weight: bold;
+font-size: 2em;
+margin-bottom: 15px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #0C2CFA;
+}
+
+main p {
+font-family: var(--font-padrao);
+font-size: 1.2em;
+margin: 5px 0px 10px 0px;
+text-align: justify;
+text-indent: 30px;
+line-height: 1.5em;
+}
+
+.chato {
+    margin-bottom: 25px;
+}
+
+main h2 {
+    font-family: var(--font-titulo);
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: left;
+}
+ 
+img {
+        max-width: 850px;
+        display: block;
+        margin: auto;
+        width: 100%;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px; 
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+position: absolute;
+top: 5%;
+left: 5%;
+right: 5%;
+width: 90%;
+height: 90%;
+}
+
+
+footer {
+    background-color: #0c2cfaa6;
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+    font-weight: bold;
+}
+
+footer > a {
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
